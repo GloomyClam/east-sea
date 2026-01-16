@@ -12,6 +12,30 @@
     display: flex;
     justify-content: space-between;
     background-color: #f9f9fa;
+
+    
+}
+.nav__link {
+    position: relative;
     color:#2e363e;
 }
 
+.nav__notification {
+    position: absolute;   
+    left: 25px;
+    bottom: 15px;
+}
+.nav__end
+{
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    display:inline-block;
+    border-radius: 20px;
+    position: absolute;
+    right: 3px;
+}
+
+.screen{
+    position: relative;
+}

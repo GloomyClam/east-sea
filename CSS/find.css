@@ -1,0 +1,15 @@
+.gear-alerm{
+    display: inline-block;
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 15px;
+    position: absolute;
+    top: -6px;
+    right: -5px;
+}
+
+.gear-parent{
+    position: relative;
+    display: inline-block;
+}

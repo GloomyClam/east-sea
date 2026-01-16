@@ -3,6 +3,16 @@
 @import "variables.css";
 @import "login.css";
 @import "nav-bar.css";
+@import "screen-header.css";
+@import "friends.css";
+@import "user-component.css";
+@import "badge.css";
+@import "find.css";
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color:#2e363e;
+
+}
+.main-screen {
+    padding: 1px var(--horizontal-space);
 }
