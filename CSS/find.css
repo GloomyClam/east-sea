@@ -13,3 +13,142 @@
     position: relative;
     display: inline-block;
 }
+
+.find-icons{
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.find-icons__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-icons__icon i {
+    font-size: 35px;
+}
+.find-icons__icon span {
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.recommended-friends{
+    color: var(--main-font);
+    padding: 25px 0px;
+    margin: 25px;
+    border-top: var(--main-border);
+    border-bottom: var(--main-border);
+
+}
+.recommended-friends__title{
+    font-size: 14px;
+}
+
+.recommended-friends span{
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 18px;
+}
+
+.open-chat__header{
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    color: var(--main-font);
+    margin-bottom: 25px;
+}
+
+.open-chat__header span{
+    opacity: 0.6;
+}
+
+.open-post{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.open-post__title{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.open-post__hashtags{
+    color: var(--main-font);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.open-post__members{
+    display: flex;
+    align-items: center;
+}
+
+.open-post__members img{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.open-post__members-count {
+    color: var(--main-font);
+    font-size: 14px;
+}
+.open-post__members-status {
+    color: violet;
+}
+.open-post__members .divider {
+    width: 1px;
+    height: 15px;
+    background-color: var(--main-font);
+    opacity: 0.5;
+    margin: 0px 5px;
+}
+.open-post__photo{
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+
+}
+
+.open-post__column:last-child {
+    flex-shrink: 1; /* 공간이 부족하면 줄어들게 허용 */
+    display: flex;
+    justify-content: flex-end; /* 사진을 오른쪽 끝으로 밀기 */
+}
+.open-post__photo {
+    width: 120px;  /* 원하는 크기 */
+    height: 120px; /* 원하는 크기 */
+    flex-shrink: 0; /* 사진 박스 자체는 120px를 유지하되 */
+    position: relative;
+}
+
+.open-post__photo img {
+    width: 100%;   /* 부모인 .open-post__photo에 꽉 맞게 */
+    height: 100%;
+    object-fit: cover; /* 이미지가 찌그러지지 않고 비율에 맞게 꽉 차게 */
+    border-radius: 15px;
+
+}
+
+
+
+.open-post__heart{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 12px;
+}
+
+.open-post__heart span{
+    margin-left: 3px;
+}
