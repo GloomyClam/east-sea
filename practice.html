@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="css/practicestyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <form id="beforelogin" class="">
+        <input id="userID" type="text" placeholder="id">
+        <input id="userPW" type="password" placeholder="password">
+        <button id="LoginBT" type="submit">log in</button>
+    </form>
+        <p id="logincheck"></p>
+        <p id="errmsg"></p>
+        <button id="LogoutBT" class="hidden" >log out</button>
+        <button id="registerBTOpen">register</button>
+    <form id="registeruser" class="hidden">
+        <input id="registeruserID" type="text" placeholder="new id">
+        <input id="registeruserPW" type="password" placeholder="new password">
+    </form>
+    <button id="registerBT" class="hidden">register</button>
+
+    <p id="registercheck"></p>
+
+    <div id="adminMenu" class="hidden">
+        <p3>괸리자 메뉴입니다</p3>
+        <button>회원 관리</button>
+        <div id="userList"></div>
+    </div>
+
+    <button id="loadUser">사용자 불러오기</button>
+    <div id="usercontainer"></div>
+    </body>
+    <script  src="JS/DB.js" defer></script>    
+    <script  src="JS/logic.js" defer></script>
+    <script  src="JS/main.js" defer></script>
+
+
+</body>
+</html>
