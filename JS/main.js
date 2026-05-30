@@ -1,4 +1,12 @@
+async function connectServer(){
+    const response = await fetch("http://localhost:3000/users");
 
+    const data = await response.json();
+
+    console.log(data);
+}
+
+connectServer();
 
 
 if(localStorage.getItem("user")){
@@ -13,24 +21,30 @@ if(localStorage.getItem("user")){
 
 }
 
-function randerUser(){
-    let currentUsers = getUsers();
+const res =await fetch('http://localhost:3000/api/emergency-beds');
+const data = await res.text();
+
+console.log(data);
+
+// function randerUser(){
+//     let currentUsers = getUsers();
     
-    userList.innerHTML="";
-    currentUsers.forEach(user => {
-        const userDiv = document.createElement('div')
+//     userList.innerHTML="";
+//     currentUsers.forEach(user => {
+//         const userDiv = document.createElement('div')
         
-        if(isAdmin(user.id)){
-            userDiv.innerHTML = `<span>${user.id} (관리자)</span>`;
-        }
-        else{
-            userDiv.innerHTML = `<span>${user.id}</span> <button onclick="removeUser('${user.id}')" >삭제</button>`;
+//         if(user.role === "admin"){
+//             userDiv.innerHTML = `<span>${user.id} (관리자)</span>`;
+//         }
+//         else{
+//             userDiv.innerHTML = `<span>${user.id}</span> <button onclick="removeUser('${user.id}')" >삭제</button>`;
             
-        }
-        userList.appendChild(userDiv);
-    });
-}
+//         }
+//         userList.appendChild(userDiv);
+//     });
+// }
 
-randerUser();
 
+
+//randerUser();
 
